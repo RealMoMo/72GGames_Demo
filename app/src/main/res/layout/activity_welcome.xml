@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="momo.com.week12_project.ui.activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_start_welcome"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:src="@drawable/selector_welcome_btn" />
+
+    <ImageView
+        android:id="@+id/iv_text_welcome"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/bg_logo_font" />
+
+    <ImageView
+        android:id="@+id/iv_logo_welcome"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_text_welcome"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_about_app" />
+
+
+</RelativeLayout>

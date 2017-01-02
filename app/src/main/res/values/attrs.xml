@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BottomMenu">
+
+        <attr name="menu_text" format="string"/>
+        <attr name="menu_normal_icon" format="reference"/>
+        <attr name="menu_select_icon" format="reference"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="HomeChannelView">
+
+
+        <attr name="channel_text" format="string"/>
+        <attr name="channel_background" format="reference"/>
+        <attr name="channel_thumbil" format="reference"/>
+
+    </declare-styleable>
+
+</resources>

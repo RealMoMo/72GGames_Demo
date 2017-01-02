@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Week12_project</string>
+    <string name="menu_home">首页</string>
+    <string name="menu_play">赚钱</string>
+    <string name="menu_shop">商城</string>
+    <string name="menu_me">我的</string>
+    <string name="home_useraccount">账户余额（元）</string>
+    <string name="home_usermoney">1.20</string>
+    <string name="home_userumoney">合计U币 1200</string>
+    <string name="home_earnmoney">开始赚钱</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_2"
+        android:textSize="@dimen/sp_12"
+        android:id="@+id/tv_banner_home"
+        android:background="@color/tv_banner_home"
+        android:textColor="@color/white"
+        android:text="123123213213123123123213213798fsdhkahjflkjskjfahaljflkhflkahlfj ljfj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+
+    <momo.com.week12_project.modules.home.widget.HomeScrollView
+        android:background="@color/home_background"
+        android:id="@+id/homescrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_280">
+            <LinearLayout
+                android:background="@mipmap/ic_home_user_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_250"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_header_home"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="@dimen/dp_64"
+                    android:layout_height="@dimen/dp_64" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_userinfo_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80">
+
+                    <TextView
+                        android:textColor="@color/home_normaltext"
+                        android:textSize="@dimen/sp_15"
+                        android:gravity="bottom|center_horizontal"
+                        android:id="@+id/tv_userinfo_account_home"
+                        android:text="@string/home_useraccount"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sp_15"
+                        android:textColor="@color/black"
+                        android:gravity="bottom|center_horizontal"
+                        android:id="@+id/tv_userinfo_money_home"
+                        android:text="@string/home_usermoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="@color/home_normaltext"
+                        android:textSize="@dimen/sp_15"
+                        android:gravity="bottom|center_horizontal"
+                        android:id="@+id/tv_userinfo_sumu_home"
+                        android:text="@string/home_userumoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/sp_25"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_home_earnmoneybtn"
+                android:id="@+id/tv_start_home"
+                android:gravity="center"
+                android:text="@string/home_earnmoney"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_36"
+                android:layout_marginRight="@dimen/dp_36"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </momo.com.week12_project.modules.home.widget.HomeScrollView>
+
+</LinearLayout>
