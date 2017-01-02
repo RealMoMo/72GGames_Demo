@@ -8,4 +8,16 @@
     <string name="home_usermoney">1.20</string>
     <string name="home_userumoney">合计U币 1200</string>
     <string name="home_earnmoney">开始赚钱</string>
+    <string name="channel1_title">签到升级公告</string>
+    <string name="channel1_content">天天签到，天天有惊喜</string>
+    <string name="channel2_title">复兴.罗马帝国</string>
+    <string name="channel2_content">超炫体验，一个独属于你的时代</string>
+    <string name="channel3_title">排行榜</string>
+    <string name="channel3_content">高手对决你排第几</string>
+    <string name="channel4_title">四级好友</string>
+    <string name="channel4_content">好友越多奖励越高</string>
+    <string name="channel5_title">手游礼包</string>
+    <string name="channel5_content">免费礼包任性领</string>
+    <string name="channel6_title">每日签到</string>
+    <string name="channel6_content">一件签到轻松拿奖</string>
 </resources>

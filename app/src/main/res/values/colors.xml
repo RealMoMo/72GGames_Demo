@@ -9,4 +9,12 @@
     <color name="home_normaltext">#88857F</color>
     <color name="home_background">#DEDEDE</color>
     <color name="black">#000</color>
+
+    <!--home channel color-->
+    <color name="home_channel_1">#FF812C</color>
+    <color name="home_channel_2">#FFB502</color>
+    <color name="home_channel_3">#74C721</color>
+    <color name="home_channel_4">#32C483</color>
+    <color name="home_channel_5">#33D7B5</color>
+    <color name="home_channel_6">#3EA2EE</color>
 </resources>

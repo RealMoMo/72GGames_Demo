@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -109,14 +110,99 @@
             </RelativeLayout>
 
 
+            <!--channel layout-->
+
             <LinearLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="1000dp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
 
+                <momo.com.week12_project.modules.home.widget.HomeChannelView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/channel1_home"
+                    android:background="@drawable/shape_home_channel1"
+                    app:channel_title="@string/channel1_title"
+                    app:channel_content="@string/channel1_content"
+                    app:channel_thumbil="@mipmap/iconfont_remen"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_100"/>
+
+                <momo.com.week12_project.modules.home.widget.HomeChannelView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/channel2_home"
+                    android:background="@drawable/shape_home_channel2"
+                    app:channel_title="@string/channel2_title"
+                    app:channel_content="@string/channel2_content"
+                    app:channel_thumbil="@mipmap/ic_my_test_paly"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_100"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <momo.com.week12_project.modules.home.widget.HomeChannelView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/channel3_home"
+                    android:background="@drawable/shape_home_channel3"
+                    app:channel_title="@string/channel3_title"
+                    app:channel_content="@string/channel3_content"
+                    app:channel_thumbil="@mipmap/iconfont_paixing"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_100"/>
+
+                <momo.com.week12_project.modules.home.widget.HomeChannelView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/channel4_home"
+                    android:background="@drawable/shape_home_channel4"
+                    app:channel_title="@string/channel4_title"
+                    app:channel_content="@string/channel4_content"
+                    app:channel_thumbil="@mipmap/iconfont_haoyou2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_100"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <momo.com.week12_project.modules.home.widget.HomeChannelView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/channel5_home"
+                    android:background="@drawable/shape_home_channel5"
+                    app:channel_title="@string/channel5_title"
+                    app:channel_content="@string/channel5_content"
+                    app:channel_thumbil="@mipmap/ic_my_gife"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_100"/>
+
+                <momo.com.week12_project.modules.home.widget.HomeChannelView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/channel6_home"
+                    android:background="@drawable/shape_home_channel6"
+                    app:channel_title="@string/channel6_title"
+                    app:channel_content="@string/channel6_content"
+                    app:channel_thumbil="@mipmap/iconfont_qiandao"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_100"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 

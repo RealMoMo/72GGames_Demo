@@ -12,9 +12,8 @@
 
     <declare-styleable name="HomeChannelView">
 
-
-        <attr name="channel_text" format="string"/>
-        <attr name="channel_background" format="reference"/>
+        <attr name="channel_title" format="string"/>
+        <attr name="channel_content" format="string"/>
         <attr name="channel_thumbil" format="reference"/>
 
     </declare-styleable>
