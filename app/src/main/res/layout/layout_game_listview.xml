@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#d3d7d4">
+
+    <ImageView
+        android:id="@+id/iv_icon_gameList"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_name_gameList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_icon_gameList"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/iv_icon_gameList"
+        android:text="asdf" />
+
+    <RatingBar
+        android:id="@+id/rating_bar_gameList"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_icon_gameList"
+        android:isIndicator="true"
+        android:max="10"
+        android:numStars="5"
+        android:progressDrawable="@drawable/layer_list_ratingbar"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/tv_count_gameList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon_gameList"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/iv_icon_gameList"
+        android:text="asdf" />
+</RelativeLayout>

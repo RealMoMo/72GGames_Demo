@@ -9,6 +9,7 @@ import com.se7en.utils.DeviceUtils;
 
 import momo.com.week12_project.R;
 import momo.com.week12_project.modules.home.widget.HomeScrollView;
+import momo.com.week12_project.ui.activity.MainActivity;
 import momo.com.week12_project.ui.fragment.BaseFragment;
 
 /**
@@ -21,6 +22,7 @@ public class HomeFragment extends BaseFragment implements HomeScrollView.GetScro
     private ImageView iv_header;
     private LinearLayout ll_userinfo;
     private TextView tv_start;
+
 
 
     @Override
@@ -82,7 +84,7 @@ public class HomeFragment extends BaseFragment implements HomeScrollView.GetScro
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.tv_start_home:{
-
+                ((MainActivity)getActivity()).jumpToGameFragment();
             }break;
         }
     }

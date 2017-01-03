@@ -94,4 +94,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         bmLast = bm;
 
     }
+
+
+    public void jumpToGameFragment(){
+        bmGame.performClick();
+    }
 }
