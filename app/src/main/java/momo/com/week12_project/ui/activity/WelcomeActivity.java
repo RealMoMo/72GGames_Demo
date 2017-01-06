@@ -20,7 +20,7 @@ import momo.com.week12_project.R;
 import momo.com.week12_project.utils.BitmapUtil;
 
 /**
- * Created by Administrator on 2016/12/29 0029.
+ * Created by realmo on 2016/12/29 0029.
  */
 
 public class WelcomeActivity extends BaseActivity {

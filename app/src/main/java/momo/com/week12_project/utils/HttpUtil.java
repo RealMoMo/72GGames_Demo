@@ -16,7 +16,7 @@ import java.util.Set;
 import momo.com.week12_project.i.BaseCallBack;
 
 /**
- * Created by se7en on 16/2/29. 网络请求的三个要素: 1.请求方式(GET,POST) 2.请求的url 3.参数
+ *  网络请求的三个要素: 1.请求方式(GET,POST) 2.请求的url 3.参数
  */
 public class HttpUtil {
 
@@ -136,5 +136,6 @@ public class HttpUtil {
         }
         return result;
     }
+
 
 }

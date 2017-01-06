@@ -28,4 +28,6 @@
     <dimen name="sp_18">18sp</dimen>
     <dimen name="dp_15">15dp</dimen>
     <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
 </resources>

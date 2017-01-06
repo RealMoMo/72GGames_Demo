@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_180"
+    android:background="@color/shop_listview_background">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_2"
+        android:id="@+id/rl_left_layout_shop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_icon_left_shop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_4"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name_left_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_icon_left_shop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text="asdf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_2"
+        android:id="@+id/rl_rightLayout_shop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_icon_right_shop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_4"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name_right_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_icon_right_shop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text="asdf" />
+    </RelativeLayout>
+
+</LinearLayout>

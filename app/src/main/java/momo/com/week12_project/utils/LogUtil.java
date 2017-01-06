@@ -3,7 +3,7 @@ package momo.com.week12_project.utils;
 import android.util.Log;
 
 /**
- * Created by se7en on 16/7/8.
+ *
  */
 public class LogUtil
 {
@@ -12,7 +12,7 @@ public class LogUtil
     public static void i(String msg)
     {
         if(isDebug){
-            Log.i("info", msg);
+            Log.i("realmo", msg);
         }
     }
 

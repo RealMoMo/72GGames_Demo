@@ -15,6 +15,17 @@ public class GameInfo {
 
     private String count;
 
+    private String downLoadUrl;
+
+
+    public String getDownLoadUrl() {
+        return downLoadUrl;
+    }
+
+    public void setDownLoadUrl(String downLoadUrl) {
+        this.downLoadUrl = downLoadUrl;
+    }
+
     public String getCount() {
         return count;
     }

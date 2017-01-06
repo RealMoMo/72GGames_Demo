@@ -29,6 +29,7 @@ public class ParseUtil {
                 info.setIcon(subJson.optString("icon"));
                 info.setScore((float) subJson.optDouble("score"));
                 info.setCount(subJson.optString("count_dl"));
+                info.setDownLoadUrl(subJson.optString("android_dl"));
                 list.add(info);
             }
         } catch (JSONException e) {

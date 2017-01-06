@@ -1,8 +1,10 @@
 package momo.com.week12_project.modules.game.ui.fragment;
 
+import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.Toast;
@@ -17,12 +19,14 @@ import momo.com.week12_project.i.BaseCallBack;
 import momo.com.week12_project.modules.game.bean.GameInfo;
 import momo.com.week12_project.modules.game.dao.GameDao;
 import momo.com.week12_project.ui.fragment.BaseFragment;
+import momo.com.week12_project.utils.Constant;
+import momo.com.week12_project.utils.DownLoadService;
 
 /**
  * Created by Administrator on 2016/12/30 0030.
  */
 
-public class GameFragment extends BaseFragment implements AbsListView.OnScrollListener {
+public class GameFragment extends BaseFragment implements AbsListView.OnScrollListener, AdapterView.OnItemClickListener {
 
     private SwipeRefreshLayout refresh;
     private ListView lv;
@@ -55,7 +59,9 @@ public class GameFragment extends BaseFragment implements AbsListView.OnScrollLi
                 loadData();
             }
         });
+
         lv.setOnScrollListener(this);
+        lv.setOnItemClickListener(this);
     }
 
     @Override
@@ -105,22 +111,63 @@ public class GameFragment extends BaseFragment implements AbsListView.OnScrollLi
                 isLoading = false;
                 page--;
                 refresh.setRefreshing(false);
-                Toast.makeText(getActivity(), "加载失败", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), data.toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
 
     }
 
-
-
+    //listview加载更多
     @Override
-    public void onScrollStateChanged(AbsListView absListView, int i) {
+    public void onScrollStateChanged(AbsListView view, int scrollState) {
+        //listview滑动状态为停止
+        if (scrollState == SCROLL_STATE_IDLE) {
+            //最后一个可见的item的Postion位置
+            int lastPosition = lv.getLastVisiblePosition();
+            //listview滑动到最后一个可见item
+            if (lastPosition == lv.getCount() - 1) {
+                int count = lv.getCount();
+                    //listview 最后一个item
+                    View lastChild = lv.getChildAt(count - lv.getFirstVisiblePosition()-1);//getChildAt(index)的取值，只能是当前可见区域（列表可滚动）的子项！
+                    //两者底部重合代表到底最底部
+                    if (lastChild.getBottom() == lv.getBottom()) {
+                        page++;
+                        loadData();
+                    }
 
+            }
+        }
+
+        //这种方法也可以，但遇到ShopFragment里面的Listview 每行包含2个item就不适用
+//        if (scrollState == SCROLL_STATE_IDLE) {
+//            int lastPosition = lv.getLastVisiblePosition();//最后一个可见的item的位置
+//            if (lastPosition == list.size() - 1) {
+//                int count = lv.getChildCount();
+//                if (count > 0) {
+//                    View lastChild = lv.getChildAt(count - 1);
+//                    //两者底部重合代表到底最底部
+//                    if (lastChild.getBottom() == lv.getBottom()) {
+//                        page++;
+//                        loadData();
+//                    }
+//                }
+//            }
+//        }
     }
 
     @Override
-    public void onScroll(AbsListView absListView, int i, int i1, int i2) {
+    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
 
+    }
+
+
+    //listview item点击事件
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        //开启服务，下载apk
+        Intent intent = new Intent(getActivity(), DownLoadService.class);
+        intent.putExtra(Constant.DOWNLOAD,list.get(position).getDownLoadUrl());
+        getActivity().startService(intent);
     }
 }

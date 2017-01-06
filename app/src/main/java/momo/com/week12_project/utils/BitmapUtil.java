@@ -11,7 +11,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 
 /**
- * Created by se7en on 16/6/2.
+ *
  */
 public class BitmapUtil {
 

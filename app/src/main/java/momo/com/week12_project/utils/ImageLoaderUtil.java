@@ -11,7 +11,7 @@ import momo.com.week12_project.R;
 
 
 /**
- * Created by se7en on 16/5/30.
+ *
  */
 public class ImageLoaderUtil
 {

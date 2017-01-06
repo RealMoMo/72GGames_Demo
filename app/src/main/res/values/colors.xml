@@ -17,4 +17,7 @@
     <color name="home_channel_4">#32C483</color>
     <color name="home_channel_5">#33D7B5</color>
     <color name="home_channel_6">#3EA2EE</color>
+
+    <!--shop listview -->
+    <color name="shop_listview_background">#d3d7d4</color>
 </resources>
