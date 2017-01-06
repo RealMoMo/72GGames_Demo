@@ -1,6 +1,5 @@
 package momo.com.week12_project.modules.game.ui.fragment;
 
-import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.widget.AbsListView;
@@ -19,8 +18,6 @@ import momo.com.week12_project.i.BaseCallBack;
 import momo.com.week12_project.modules.game.bean.GameInfo;
 import momo.com.week12_project.modules.game.dao.GameDao;
 import momo.com.week12_project.ui.fragment.BaseFragment;
-import momo.com.week12_project.utils.Constant;
-import momo.com.week12_project.utils.DownLoadService;
 
 /**
  * Created by Administrator on 2016/12/30 0030.
@@ -166,8 +163,8 @@ public class GameFragment extends BaseFragment implements AbsListView.OnScrollLi
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         //开启服务，下载apk
-        Intent intent = new Intent(getActivity(), DownLoadService.class);
-        intent.putExtra(Constant.DOWNLOAD,list.get(position).getDownLoadUrl());
-        getActivity().startService(intent);
+//        Intent intent = new Intent(getActivity(), DownLoadService.class);
+//        intent.putExtra(Constant.DOWNLOAD,list.get(position).getDownLoadUrl());
+//        getActivity().startService(intent);
     }
 }
